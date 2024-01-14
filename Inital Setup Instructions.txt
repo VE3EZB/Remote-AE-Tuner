@@ -1,15 +1,20 @@
 Remote Antenna Tuner Initial Setup
 
-The initial setup of this tuner will involve several edits and uploads of the software to the NodeMCU board before it will operate as intended. Below are the step by step instructions to setup and operate the tuner as designed. You will need the Arduino IDE 2.2.1 (or the latest version) which you can get from this website [https://www.arduino.cc/en/software]
+The initial setup of this tuner will involve several edits and uploads of the software to the NodeMCU board 
+before it will operate as intended. Below are the step by step instructions to setup and operate the tuner 
+as designed. You will need the Arduino IDE 2.2.1 (or the latest version) which you can get from this 
+website [https://www.arduino.cc/en/software]
 
 
-1.  Edit the file Remote_AE_Tuner.ino, and change lines 42 & 43 so it contains the SSID and Pasword for the network you will connect to.
+1.  Edit the file Remote_AE_Tuner.ino, and change lines 42 & 43 so it contains the SSID and Pasword for the 
+network you will connect to.
 
 	42	const char* ssid = "your_ssid";       	// Edit for your SSID
 	43	const char* password = "your_password";	// Edit for your password
 
 
-2.  In order to initialize the NodeMCU to store the correct motor position, you will need to delete the /* at the begining of line 209 and delete the */ at the end of line 214 and then upload code. 
+2.  In order to initialize the NodeMCU to store the correct motor position, you will need to delete the /* at 
+the begining of line 209 and delete the */ at the end of line 214 and then upload code. 
 
 	205	void setup() { 
 	206
@@ -23,7 +28,10 @@ The initial setup of this tuner will involve several edits and uploads of the so
 	214	//  use the code above to initialize a new board */
 
 
-3.  Once Step 2 above has been completed, you will have to rem out the this code segment because it will no longer be required. To do this, you will need to add /* at the beginning of line 209 and add */ at the end of line 214. Once this is done, upload the code to the board. This will allow proper storage of the motor position so when the device is powered on, it will remember where the motor is positioned.
+3.  Once Step 2 above has been completed, you will have to rem out the this code segment because it will no longer 
+be required. To do this, you will need to add /* at the beginning of line 209 and add */ at the end of line 214. 
+Once this is done, upload the code to the board. This will allow proper storage of the motor position so when the 
+device is powered on, it will remember where the motor is positioned.
 
 4. Run the motor until the cw end stop is activated. You should see a 0 (zero) as a position indicator.
 
