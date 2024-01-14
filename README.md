@@ -8,3 +8,8 @@ For the 80m band, the inductor can be tuned by soldering the tap to the inductor
 How to tune it from the shack? Running new wire and installing a motor and end stop switches to adjust the inductor from the shack was certainly a workable idea but that involved tearing up the driveway and lawn to install more cables. Not ideal because the RF transmission cable (LDF-4 1/2" heliax) and the 12v dc relay power as well as the many ground radials buried around the antenna and digging another trench for a new wire, risked damaging the existing cable. 
 
 
+
+The initial setup of this tuner will involve several edits and uploads of the software to the NodeMCU board 
+before it will operate as intended. Below are the step by step instructions to setup and operate the tuner 
+as designed. You will need the Arduino IDE 2.2.1 (or the latest version) which you can get from this 
+website [https://www.arduino.cc/en/software]
