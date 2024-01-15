@@ -290,7 +290,7 @@ console.log(document.getElementById("positionIndicator"));
   <body>
 
     <center>
-      <h1>VE3OJN Remote Antenna Tuner</h1>
+      <h1>Remote Antenna Tuner</h1>
       <span id="position">0</span> 
       
 <div id="meterContainer">
