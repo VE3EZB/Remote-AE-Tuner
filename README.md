@@ -7,7 +7,7 @@ For the 80m band, the inductor can be tuned by soldering the tap to the inductor
 
 How to tune it from the shack? Running new wire and installing a motor and end stop switches to adjust the inductor from the shack was certainly a workable idea but that involved tearing up the driveway and lawn to install more cables. Not ideal because the RF transmission cable (LDF-4 1/2" heliax) and the 12v dc relay power as well as the many ground radials buried around the antenna and digging another trench for a new wire, risked damaging the existing cable. So, I decided to try a wireless solution. 
 
-You can read more detales about this project and how it came together in the article "Remote AE Tuner.pdf" elsewhere in this repository.
+You can read more detales about this project and how it came together in the article "Building a WiFi Enabled Remote Antenna Tuner.pdf" elsewhere in this repository.
 
 The initial setup of this tuner will involve several edits and uploads of the software to the NodeMCU board 
 before it will operate as intended. It is not difficult to do but you will need to follow the steps in order or your results may not work as intended. The step-by-step instructions are in the document "Initial Setup Instruction.txt". 
